@@ -1,1 +1,15 @@
-
+#poke {
+  height: 100vh;
+  display: flex;
+  /* height: 30rem; */
+  align-items: center;
+  justify-content: center;
+  background-color: darkgrey;
+}
+img {
+  height: 20vh;
+  vertical-align: bottom;
+}
+p {
+  margin: 0;
+}
