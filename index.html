@@ -11,15 +11,21 @@
     <title>Learning JS</title>
   </head>
 
-  <body class="bg-gray-100">
+  <body class="bg-yellow-100">
     <div
-      class="especies flex flex-wrap justify-center mt-6 py-4 items-center px-2 border border-gray-400 shadow-lg rounded-lg mx-auto w-4/5"
+      class="especies flex flex-wrap justify-center my-6 py-4 items-center px-2 border border-gray-400 shadow-lg rounded-lg mx-auto w-4/5"
       id="especies"
     ></div>
 
-    <div id="poke" class="mt-6">
-      <img src="" alt="" id="image" />
-      <p id="name"></p>
+    <div id="poke" class="flex flex-col-reverse items-center">
+      <div class="flex">
+        <div><img src="" alt="" id="image1" /></div>
+        <div><img src="" alt="" id="image2" /></div>
+      </div>
+      <p
+        id="name"
+        class="text-4xl font-extrabold leading-relaxed uppercase text-gray-700"
+      ></p>
     </div>
 
     <script src="main.js"></script>

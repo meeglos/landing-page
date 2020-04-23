@@ -28,7 +28,8 @@ tipo.forEach((e) =>
 );
 
 const BASE_URL = "https://pokeapi.co/api/v2/";
-const $image = document.querySelector("#image");
+const $image1 = document.querySelector("#image1");
+const $image2 = document.querySelector("#image2");
 const $name = document.querySelector("#name");
 
 function renderError(status) {
@@ -36,7 +37,8 @@ function renderError(status) {
 }
 function renderPokemon(pokemon) {
   $name.textContent = pokemon.name;
-  $image.setAttribute("src", pokemon.sprites.front_default);
+  $image1.setAttribute("src", pokemon.sprites.front_default);
+  $image2.setAttribute("src", pokemon.sprites.back_default);
 }
 
 function ajax({
@@ -81,7 +83,7 @@ function ajax({
 }
 
 ajax({
-  url: `${BASE_URL}pokemon/745`,
+  url: `${BASE_URL}pokemon/2`,
   async: true,
   done: renderPokemon,
   error: renderError,
