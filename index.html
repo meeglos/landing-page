@@ -11,47 +11,172 @@
     <title>Learning JS</title>
   </head>
 
-  <body class="bg-yellow-500">
-    <div class="flex flex-col h-screen">
+  <body>
+    <div class="flex flex-col h-screen text-sm text-gray-600">
       <div class="bg-blue-500 flex-1 flex overflow-y-hidden">
         <div
-          class="sidebar bg-red-500 w-48 flex-none flex flex-col justify-between"
+          class="sidebar bg-gray-900 w-48 flex-none flex flex-col justify-between font-semibold"
         >
-          <div>one</div>
-          <div class="overflow-y-auto">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, nam
-            ipsam magnam molestiae eligendi cupiditate quod et, nostrum libero
-            reprehenderit ullam, sit minima veritatis sapiente totam repudiandae
-            tempore earum vel commodi ipsa. Commodi amet pariatur iusto saepe,
-            cupiditate recusandae, blanditiis temporibus nobis cum magnam, error
-            perferendis! Rerum mollitia quaerat laboriosam possimus soluta,
-            voluptatum tempora quibusdam veritatis quam commodi voluptatibus
-            totam beatae vitae ab a quod suscipit laudantium quis aspernatur ex
-            rem? Debitis quis odio beatae asperiores in corrupti totam? Maiores
-            enim optio beatae repudiandae debitis praesentium harum voluptatum
-            eum, ullam quas ad, dicta, libero molestiae blanditiis hic. Iure
-            voluptatibus facere minus veniam quasi voluptates deleniti in animi
-            quae possimus laborum, placeat error assumenda, tempore fugit odit
-            illo veritatis id. Non incidunt sapiente rerum repudiandae mollitia
-            optio dolore accusamus temporibus nulla in consequatur ratione ipsam
-            facere quo minus quam eligendi, ducimus neque. Tempora, adipisci,
-            doloremque perferendis qui voluptas quis quasi fuga omnis odit
-            dolorem dignissimos voluptate ipsa est et ea laborum! Velit quae
-            voluptas asperiores animi quisquam? Ea porro unde ad aliquam beatae
-            fugiat corrupti saepe laudantium atque dolor tempore, repellendus
-            similique esse aut quos explicabo eaque? Perspiciatis aspernatur
-            molestias repudiandae dolorum fugiat praesentium exercitationem
-            natus autem, cumque veniam iste placeat quos minima deserunt
-            reiciendis accusantium ab quae recusandae similique ducimus ut
-            repellendus ea! Aliquid sint corporis nam, voluptatibus nesciunt
-            architecto ea? Consectetur eos nihil incidunt soluta inventore. Sint
-            molestiae reiciendis repellat porro ullam minus suscipit, soluta
-            est, alias reprehenderit ducimus! In placeat consequatur commodi
-            itaque possimus recusandae eius laborum consequuntur.
+          <ul class="py-6">
+            <li class="border-l-4 border-green-600">
+              <a href="#" class="flex items-center mx-4 mt-4 group"
+                ><svg
+                  class="fill-current text-white group-hover:text-white"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                >
+                  <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                  <path d="M0 0h24v24H0z" fill="none" /></svg
+                ><span class="ml-2 text-white capitalize group-hover:text-white"
+                  >home</span
+                ></a
+              >
+            </li>
+            <li class="border-l-4 border-green-600">
+              <a href="#" class="flex items-center mx-4 mt-4"
+                ><svg
+                  class="fill-current text-white"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                >
+                  <path
+                    d="M12 10.9c-.61 0-1.1.49-1.1 1.1s.49 1.1 1.1 1.1c.61 0 1.1-.49 1.1-1.1s-.49-1.1-1.1-1.1zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.19 12.19L6 18l3.81-8.19L18 6l-3.81 8.19z"
+                  />
+                  <path d="M0 0h24v24H0z" fill="none" /></svg
+                ><span class="ml-2 text-white capitalize">browse</span></a
+              >
+            </li>
+            <li class="border-l-4 border-green-600">
+              <a href="#" class="flex items-center mx-4 mt-4"
+                ><svg
+                  class="fill-current text-white"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                >
+                  <path
+                    d="M3.24 6.15C2.51 6.43 2 7.17 2 8v12a2 2 0 002 2h16a2 2 0 002-2V8c0-1.11-.89-2-2-2H8.3l8.26-3.34L15.88 1 3.24 6.15zM7 20c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm13-8h-2v-2h-2v2H4V8h16v4z"
+                  />
+                  <path d="M0 0h24v24H0z" fill="none" /></svg
+                ><span class="ml-2 text-white capitalize">radio</span></a
+              >
+            </li>
+          </ul>
+          <div class="sidebar-spotify overflow-y-auto px-5 mt-2">
+            <h3
+              class="uppercase tracking-widest text-gray-200 font-normal text-xs mt-4"
+            >
+              Your Library
+            </h3>
+            <ul class="leading-loose">
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Made for you</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Recently played</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Liked songs</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Albums</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Artists</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Podcasts</a>
+              </li>
+            </ul>
+            <h3
+              class="uppercase tracking-widest text-gray-200 font-normal text-xs mt-4"
+            >
+              Playlists
+            </h3>
+            <ul class="leading-loose">
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Acoustic hits</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Acoustic covers</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Discover weekly</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Hot hits Spain</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">90's Hip-Hop</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">90's smash hits</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Acoustic hits</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Acoustic covers</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Discover weekly</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">Hot hits Spain</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">90's Hip-Hop</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">90's smash hits</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white"
+                  >This is Smashing Pumpkins covers</a
+                >
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white"
+                  >This is Red Hot Chili Peppers</a
+                >
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white"
+                  >Latin Super Oldies Hot Ranking</a
+                >
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">90's Indie</a>
+              </li>
+              <li class="truncate">
+                <a href="#" id="" class="hover:text-white">90's hard hits</a>
+              </li>
+            </ul>
           </div>
-          <div>three</div>
+          <div
+            class="border-t border-gray-800 h-16 px-4 py-2 flex items-center group"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              class="fill-current text-gray-600 w-8 h-8 group-hover:text-white"
+              width="18"
+              height="18"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+              />
+            </svg>
+            <a
+              href="#"
+              class="font-normal text-gray-500 ml-2 group-hover:text-white"
+              >New playlist</a
+            >
+          </div>
         </div>
-        <div class="content-area bg-red-300 flex-1 overflow-y-auto">
+        <div class="content-area bg-gray-800 flex-1 overflow-y-auto">
           content area. Lorem Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Quibusdam quae, ut incidunt optio hic aliquam
           laboriosam explicabo libero, fugiat, ad maxime accusamus. Molestias
