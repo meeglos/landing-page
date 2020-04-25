@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>.: about :.</title>
+  </head>
+  <body>
+    <div class="flex h-screen">
+      <section class="flex-1 bg-blue-600">left</section>
+      <section class="flex-1 bg-yellow-500 relative overflow-hidden">
+        <div
+          class="video-container absolute top-0 left-0 w-screen h-screen object-cover"
+        >
+          <video
+            autoplay
+            muted
+            loop
+            src="video-bg01.mp4"
+            class="absolute min-h-screen min-w-screen bg-black"
+            style="
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              filter: blur(5px);
+            "
+          ></video>
+        </div>
+      </section>
+    </div>
+    <section id="about">
+      <h1>About</h1>
+      <p>
+        This is a landing page with a full screen video background. Feel free to
+        use this landing page in your projects. keep adding sections, change the
+        video, content , etc
+      </p>
+
+      <h2>Follow Me On Social Media</h2>
+
+      <div class="social">
+        <a href="#" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+      </div>
+    </section>
+  </body>
+</html>
